@@ -118,9 +118,10 @@ Used in hash-based applications and sometimes in graphics pipelines.
 | Quick Sort         | O(n log n)    | O(n log n)     | O(n²)      | O(log n)         | ❌ No    |
 | Heap Sort          | O(n log n)    | O(n log n)     | O(n log n) | O(1)             | ❌ No    |
 | Shell Sort         | O(n log n)    | Depends on gap | O(n²)      | O(1)             | ❌ No    |
-| Counting Sort	     | O(n + k)	     | O(n + k)	      | O(n + k)	 | O(k)	            | ✅ Yes   |
-| Radix Sort	       | O(nk)	       | O(nk)	        | O(nk)	     | O(n + k)	        | ✅ Yes   |
-| Bucket Sort	       | O(n + k)      | O(n + k)       |	O(n²) |    | (if poorly distributed)	O(n + k) |	✅ Yes (if stable sort is used inside)|
+| Counting Sort	     | O(n + k)	     | O(n + k)	      | O(n + k)   | O(k)	          | ✅ Yes   |
+| Radix Sort	     | O(nk)	     | O(nk)	      | O(nk)	   | O(n + k)	      | ✅ Yes   |
+| Bucket Sort	     | O(n + k)      | O(n + k)       |	O(n²) |    | (if poorly distributed)|✅ Yes (if stable sort is used inside)|	
+                                                                        O(n + k)            	
 
 n = number of elements
 
