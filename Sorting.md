@@ -7,6 +7,7 @@ OUT OF 10 SORTING ALGORITHM IT IS DIVEIDED INTO TWO TYPES
 Bubble Sort || Selection Sort || Insertion Sort || Merge Sort || Quicksort || Heap Sort || Shell Sort
     
 🔹 1. Bubble Sort
+
 ✅ Basic Idea:
 Repeatedly compare adjacent elements and swap if out of order. Smaller elements "bubble" to the top.
 
@@ -14,6 +15,7 @@ Repeatedly compare adjacent elements and swap if out of order. Smaller elements 
 Educational purposes only; used to teach sorting fundamentals and internal loops.
 
 🔹 2. Selection Sort
+
 ✅ Basic Idea:
 Repeatedly find the minimum element from the unsorted part and place it at the beginning.
 
@@ -21,6 +23,7 @@ Repeatedly find the minimum element from the unsorted part and place it at the b
 Useful where swaps are costly but comparisons are cheap. Also for simple array problems.
 
 🔹 3. Insertion Sort
+
 ✅ Basic Idea:
 Build the final sorted array one item at a time by inserting elements into the correct position.
 
@@ -28,6 +31,7 @@ Build the final sorted array one item at a time by inserting elements into the c
 Excellent for small or nearly sorted arrays. Often used as the base case in recursive sorts like Merge Sort.
 
 🔹 4. Merge Sort
+
 ✅ Basic Idea:
 Divide the array into halves, recursively sort them, then merge the sorted halves.
 
@@ -35,6 +39,7 @@ Divide the array into halves, recursively sort them, then merge the sorted halve
 Great for linked lists, external sorting, and when stability is important (e.g., sorting database records).
 
 🔹 5. Quick Sort
+
 ✅ Basic Idea:
 Select a pivot, partition the array such that left < pivot < right, then recursively sort partitions.
 
@@ -42,6 +47,7 @@ Select a pivot, partition the array such that left < pivot < right, then recursi
 Ideal for large arrays and commonly used in practice due to fast average performance.
 
 🔹 6. Heap Sort
+
 ✅ Basic Idea:
 Build a heap (max or min) and extract elements one by one to sort.
 
@@ -49,6 +55,7 @@ Build a heap (max or min) and extract elements one by one to sort.
 Useful when O(1) space and guaranteed O(n log n) time are needed. Also good for priority queues.
 
 🔹 7. Shell Sort
+
 ✅ Basic Idea:
 Generalization of Insertion Sort that sorts elements far apart using gaps, reducing the gap each pass.
 
@@ -62,6 +69,7 @@ Practical improvement over Insertion Sort for moderate-sized arrays. Useful in e
 Counting Sort || Radix Sort || Bucket Sort
     
 🔹 1. Counting Sort
+
 ✅ Basic Idea:
 Count occurrences of each element in a frequency array (indexed by value), then compute positions using prefix sums and place elements accordingly.
 
@@ -74,6 +82,7 @@ Situations where O(n log n) comparison-based limits can be avoided.
 Useful as a subroutine in Radix Sort.
 
 🔹 2. Radix Sort
+
 ✅ Basic Idea:
 Sort elements digit by digit, from least significant to most significant (LSD variant), using a stable sort (often Counting Sort) at each digit level.
 
@@ -86,6 +95,7 @@ Sorting fixed-length strings (e.g., IDs, zip codes).
 Used in databases and network routers for integer or IP address sorting.
 
 🔹 3. Bucket Sort
+
 ✅ Basic Idea:
 Distribute elements into buckets based on value ranges. Then sort each bucket individually (using Insertion Sort or another sort) and concatenate the results.
 
