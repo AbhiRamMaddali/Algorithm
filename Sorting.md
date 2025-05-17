@@ -3,7 +3,8 @@ THERE ARE TOTAL 10 SORTING ALGORITHM
 OUT OF 10 SORTING ALGORITHM IT IS DIVEIDED INTO TWO TYPES 
 
 ---COMPARISON
-    Bubble Sort||Selection Sort||Insertion Sort||Merge Sort||Quicksor||Heap Sort||Shell Sort
+    
+Bubble Sort||Selection Sort||Insertion Sort||Merge Sort||Quicksor||Heap Sort||Shell Sort
     
 🔹 1. Bubble Sort
 ✅ Basic Idea:
@@ -57,7 +58,8 @@ Practical improvement over Insertion Sort for moderate-sized arrays. Useful in e
 
 
 ---NON-COMPARISON
-    Counting Sort||Radix Sort||Bucket Sort
+    
+Counting Sort||Radix Sort||Bucket Sort
     
 🔹 1. Counting Sort
 ✅ Basic Idea:
