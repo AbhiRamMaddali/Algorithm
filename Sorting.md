@@ -1,5 +1,7 @@
 THERE ARE TOTAL 10 SORTING ALGORITHM
+
 OUT OF 10 SORTING ALGORITHM IT IS DIVEIDED INTO TWO TYPES 
+
 ---COMPARISON
     Bubble Sort||Selection Sort||Insertion Sort||Merge Sort||Quicksor||Heap Sort||Shell Sort
     
