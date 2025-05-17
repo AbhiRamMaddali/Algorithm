@@ -109,17 +109,17 @@ Used in hash-based applications and sometimes in graphics pipelines.
 
 
 
-| Algorithm          | Best Case     | Average Case   | Worst Case | Space Complexity | Stable? |
-| ------------------ | ------------- | -------------- | ---------- | ---------------- | ------- |
-| Bubble Sort        | O(n)          | O(n²)          | O(n²)      | O(1)             | ✅ Yes   |
-| Selection Sort     | O(n²)         | O(n²)          | O(n²)      | O(1)             | ❌ No    |
-| Insertion Sort     | O(n)          | O(n²)          | O(n²)      | O(1)             | ✅ Yes   |
-| Merge Sort         | O(n log n)    | O(n log n)     | O(n log n) | O(n)             | ✅ Yes   |
-| Quick Sort         | O(n log n)    | O(n log n)     | O(n²)      | O(log n)         | ❌ No    |
-| Heap Sort          | O(n log n)    | O(n log n)     | O(n log n) | O(1)             | ❌ No    |
-| Shell Sort         | O(n log n)    | Depends on gap | O(n²)      | O(1)             | ❌ No    |
-| Counting Sort	     | O(n + k)	     | O(n + k)	      | O(n + k)   | O(k)	          | ✅ Yes   |
-| Radix Sort	     | O(nk)	     | O(nk)	      | O(nk)	   | O(n + k)	      | ✅ Yes   |
+| Algorithm          | Best Case     | Average Case   | Worst Case | Space Complexity       | Stable? |
+| ------------------ | ------------- | -------------- | ---------- | ---------------------- | ------- |
+| Bubble Sort        | O(n)          | O(n²)          | O(n²)      | O(1)                   | ✅ Yes   |
+| Selection Sort     | O(n²)         | O(n²)          | O(n²)      | O(1)                   | ❌ No    |
+| Insertion Sort     | O(n)          | O(n²)          | O(n²)      | O(1)                   | ✅ Yes   |
+| Merge Sort         | O(n log n)    | O(n log n)     | O(n log n) | O(n)                   | ✅ Yes   |
+| Quick Sort         | O(n log n)    | O(n log n)     | O(n²)      | O(log n)               | ❌ No    |
+| Heap Sort          | O(n log n)    | O(n log n)     | O(n log n) | O(1)                   | ❌ No    |
+| Shell Sort         | O(n log n)    | Depends on gap | O(n²)      | O(1)                   | ❌ No    |
+| Counting Sort	     | O(n + k)	     | O(n + k)	      | O(n + k)   | O(k)	                | ✅ Yes   |
+| Radix Sort	     | O(nk)	     | O(nk)	      | O(nk)	   | O(n + k)	            | ✅ Yes   |
 | Bucket Sort	     | O(n + k)      | O(n + k)       |	O(n²) |    | (if poorly distributed)|✅ Yes (if stable sort is used inside)|	
                                                                         O(n + k)            	
 
