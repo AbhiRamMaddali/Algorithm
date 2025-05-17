@@ -12,6 +12,7 @@ Compare each element with the target.
 If a match is found, return the index; else continue till the end.
 
 ⏱️ Time Complexity:
+
 Best Case: O(1) (if the target is the first element)
 
 Average Case: O(n)
@@ -19,9 +20,11 @@ Average Case: O(n)
 Worst Case: O(n)
 
 🧠 Space Complexity:
+
 O(1) (no extra space needed)
 
 🛠️ Use Cases:
+
 When the data is unsorted or small.
 
 Simple to implement and no preprocessing is needed.
@@ -44,6 +47,7 @@ If greater, search the right half.
 Recursively or iteratively apply this process.
 
 ⏱️ Time Complexity:
+
 Best Case: O(1) (if the middle is the target)
 
 Average Case: O(log n)
@@ -51,11 +55,13 @@ Average Case: O(log n)
 Worst Case: O(log n)
 
 🧠 Space Complexity:
+
 O(1) (iterative)
 
 O(log n) (recursive – due to function call stack)
 
 🛠️ Use Cases:
+
 For large sorted datasets.
 
 Used in searching over:
