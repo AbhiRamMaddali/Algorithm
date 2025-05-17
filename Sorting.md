@@ -123,6 +123,8 @@ Used in hash-based applications and sometimes in graphics pipelines.
 | Bucket Sort	       | O(n + k)      | O(n + k)       |	O(n²) |    | (if poorly distributed)	O(n + k) |	✅ Yes (if stable sort is used inside)|
 
 n = number of elements
+
 k = range of input (or number of digits for Radix Sort)
+
 Bucket Sort worst case can degrade to O(n²) if many elements fall into one bucket.
 
