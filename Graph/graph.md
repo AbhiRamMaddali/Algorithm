@@ -1,3 +1,6 @@
+| BASIC IDEA :  A graph is a fundamental data structure in computer science and mathematics used to model relationships between objects|
+|--------------------------------------------------------------------------------------------------------------------------------------|
+
 # 📊 Graph Data Structures in Depth
 
 Graphs are powerful tools for modeling real-world systems — from social networks to road maps. This guide covers the fundamentals, key concepts, and how to implement graphs in code. 🚀
