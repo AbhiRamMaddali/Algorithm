@@ -25,6 +25,36 @@ When balance is disturbed after insertion or deletion, we perform rotations:
 
 ### ➖ Deletion Cases:
 Similar to insertion, after deletion we check and fix balance using rotations.
+# 🌳 AVL Tree Deletion – Complete Explanation
+
+An **AVL Tree** is a self-balancing binary search tree where the **balance factor** (difference in height between left and right subtrees) of **every node** is **-1, 0, or +1**.
+
+When we **delete a node** from an AVL Tree, we must ensure that the tree remains balanced.
+
+---
+
+## ✅ Deletion Steps in AVL Tree
+
+### 1️⃣ Perform BST Deletion
+
+Follow standard **Binary Search Tree (BST)** deletion logic:
+
+- **No child** (leaf): Remove the node.
+- **One child**: Replace the node with its child.
+- **Two children**:
+  - Find the **inorder successor** (smallest in right subtree).
+  - Replace current node’s value with successor's value.
+  - Recursively delete the successor.
+
+---
+
+### 2️⃣ Update Height
+
+After deleting a node and returning back up the recursion stack, update the height of the current node:
+
+```python
+node.height = 1 + max(height(node.left), height(node.right))
+```
 
 ## 🔧 Rotations Visual Example
 
@@ -44,9 +74,27 @@ Similar to insertion, after deletion we check and fix balance using rotations.
       / \                         / \
      T2  x                      T1   T2
 ```
-**Left-Right (LR)** – use Left Rotation + Right Rotation
-
-**Right-Left (RL)**– use Right Rotation + Left Rotation
+---
+**Right-Left (RL)– use Right Rotation + Left Rotation**
+```
+    z                                z                               x
+   / \                             /   \                           /   \
+  y   T4   →  Left(y) →          x    T4   →  Right(z) →         y      z
+ / \                             / \                            / \    / \
+T1  x                          y  T3                          T1 T2   T3 T4
+    / \                       / \
+  T2  T3                   T1  T2
+```
+**Left-Right (LR)– use Left Rotation + use Right Rotation**
+```
+      z                                z                               x
+     / \                             /   \                           /   \
+   T1   y      →   Right(y) →      T1    x     →   Left(z) →         z      y
+       / \                           / \                            / \    / \
+      x  T4                        T2  y                           T1 T2  T3 T4
+     / \                               / \
+   T2  T3                            T3  T4
+```
 ---
 **📈 Example:**
 Insert 10 → 20 → 30 into an empty tree.
@@ -128,10 +176,10 @@ Unlike a messy normal tree that can become slow like a linked list, AVL trees st
 Think of an AVL tree like a **self-adjusting seesaw**. If one side gets heavier, it automatically shifts weights (rotations) to stay level.
 
 ---
+## TL;DR:"Too Long; Didn't Read.
 
-## TL;DR
+AVL trees are binary search trees that fix their own balance to stay short and efficient, using simple “twists” (rotations) whenever things get lopsided.
 
-**AVL trees** are binary search trees that fix their own balance to stay short and efficient, using simple “twists” (rotations) whenever things get lopsided.
 ---
 ```python
 class Node:
