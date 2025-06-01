@@ -148,4 +148,79 @@ def insert(root, key):
         root.right = insert(root.right, key)
     return root
 ```
+# ✅ BST Search Function
+```python
+
+def search(root, key):
+    if root is None or root.value == key:
+        return root
+    if key < root.value:
+        return search(root.left, key)
+    else:
+        return search(root.right, key)
+```
+
+# 🔍 How it works:
+- Base case: If root is None or root.value == key, it returns the current node (or None if not found).
+
+Recursive step:
+
+- If key < root.value, search the left subtree.
+
+- If key > root.value, search the right subtree.
+# 🔁 Iterative BST Search
+```python
+def search(root, key):
+    while root is not None:
+        if key == root.value:
+            return root
+        elif key < root.value:
+            root = root.left
+        else:
+            root = root.right
+    return None
+```
+# BST Deletion
+```python
+def deletion(node, key):
+    if node is None:
+        return None
+    if key < node.value:
+        node.left = deletion(node.left, key)
+    elif key > node.value:
+        node.right = deletion(node.right, key)
+    else:
+        # Node with only one child or no child
+        if node.left is None:
+            return node.right
+        elif node.right is None:
+            return node.left
+        # Node with two children: get the inorder successor (min in right subtree)
+        temp = node.right
+        while temp.left:
+            temp = temp.left
+        node.value = temp.value
+        node.right = deletion(node.right, temp.value)
+    return node
+```
+# 🔥 Goal:
+Remove a node with a given key from a Binary Search Tree while keeping the BST properties intact.
+---
+# 🧠 How it works (Step-by-step):
+1. Find the node to delete:
+- If key < node.value: go left
+
+- If key > node.value: go right
+
+- If key == node.value: this is the node to delete
+---
+# 🔄 Now 3 possible cases:
+✅ Case 1: Node has no children (leaf node)
+→ Just remove it (return None)
+
+✅ Case 2: Node has 1 child
+→ Return the child to replace the node
+
+✅ Case 3: Node has 2 children
+→ Find the smallest value in the right subtree (called the inorder successor), replace current node’s value with it, and delete that successor node from the right subtree
 
